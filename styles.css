@@ -1,21 +1,6 @@
-img {
-    margin-top: -80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 400px;
-}
-
-.title {
-    text-align: center;
-    position: relative;
-    top: 300px;
-}
-
-.subtitle {
-    text-align: center;
-    position: relative;
-    top: 290px;
-    font-size: 17px;
+main {
+    vertical-align: middle;
+    text-align: center
 }
 
 #time {
