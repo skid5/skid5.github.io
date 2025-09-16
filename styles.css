@@ -1,8 +1,14 @@
 .front-page, .header, .about {
     vertical-align: middle;
-    text-align: center
+    text-align: center;
 }
 
 #time {
     font-style: italic;
+}
+
+.contact {
+    font-size: 18px;
+    width: 10%;
+    margin-left: 850px;
 }
