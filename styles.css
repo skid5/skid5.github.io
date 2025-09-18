@@ -6,3 +6,10 @@
 #time {
     font-style: italic;
 }
+
+.center {
+    width: 600px;
+    padding: 2em;
+    margin: 5em auto;
+    font-size: 16px;
+}
