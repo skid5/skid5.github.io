@@ -17,3 +17,7 @@
 .bullet {
     list-style-type: none;
 }
+
+a:visited {
+    color:blue;
+}
