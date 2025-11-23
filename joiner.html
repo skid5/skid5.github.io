@@ -11,7 +11,6 @@
             const params = new URLSearchParams(window.location.search)
             const placeId = params.get("placeId")
             const gameInstanceId = params.get("gameInstanceId")
-            if (!placeId || !gameInstanceId) {return}
 
             window.location.replace("roblox://experiences/start?placeId=" + placeId + (gameInstanceId ? "&gameInstanceId=" + gameInstanceId : ""))
         </script>
