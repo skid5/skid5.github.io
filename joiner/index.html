@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>skid</title>
+        <link href="https://skid5.github.io/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script>
+            const params = new URLSearchParams(window.location.search)
+            const placeID = params.get("placeId")
+            const gameInstanceId = params.get("gameInstanceId")
+
+            const redirect = "roblox://experiences/start?placeId=" + placeId + (gameInstanceId ? "&gameInstanceId=" + gameInstanceId : "")
+            window.location.replace(redirect)
+            document.getElementById("link").href = redirect
+        </script>
+        <a id="link">Redirecting...</a>
+    </body>
+</html>
