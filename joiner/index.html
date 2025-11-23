@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>skid</title>
-        <link href="https://skid5.github.io/styles.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <script>
-            const params = new URLSearchParams(window.location.search)
-            const placeID = params.get("placeId")
-            const gameInstanceId = params.get("gameInstanceId")
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Roblox Joiner</title>
+</head>
+<body>
+  <script>
+    const params = new URLSearchParams(window.location.search);
 
-            const redirect = "roblox://experiences/start?placeId=" + placeId + (gameInstanceId ? "&gameInstanceId=" + gameInstanceId : "")
-            window.location.replace(redirect)
-            document.getElementById("link").href = redirect
-        </script>
-        <a id="link">Redirecting...</a>
-    </body>
+    const placeId = params.get("placeId");
+    const gameInstanceId = params.get("gameInstanceId");
+
+    const robloxUrl =
+      "roblox://experiences/start?placeId=" +
+      placeId +
+      (gameInstanceId ? "&gameInstanceId=" + gameInstanceId : "");
+
+    window.location.replace(robloxUrl);
+
+    document.getElementById("link").href = robloxUrl;
+  </script>
+
+  <a id="link">Click here if not redirected.</a>
+</body>
 </html>
